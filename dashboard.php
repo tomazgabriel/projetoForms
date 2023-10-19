@@ -9,6 +9,13 @@
 
     <link rel="stylesheet" href="/ProjetoForms/stylesheets/style.css">
 
+    <script src="/ProjetoForms/javascript/login.js"></script>
+
+    <?php
+        //inicializa sessão do usuário
+        session_start(); 
+    ?>
+
 </head>
 <body id="bd1">
     <header>
@@ -34,27 +41,7 @@
         </nav>
     </header>
     <main class="container m-0">
-        <div class="row m-0 mt-3">
-            <div class="col-sm-8 m-0">
-                <form class="bg-transparent p-0 mt-1" id="formInfo">
-                    <h1 class="text-light">Projeto Forms</h1>
-                    <span>Projeto para criação e tarefas baseado em formulários à <br> partir de usuários pré-definidos cadastrados no sistema.</span>
-                </form>
-            </div>
-            <div class="col-sm-4 m-0">
-                <form class="form-control shadow-sm rounded bg-transparent p-2 pb-5 mt-1" id="formLogin">
-                    <h1 class="text-light">Entrar</h1>
-                    <label for="login">Login</label>
-                    <input type="text" class="form-control shadow-sm" name="login">
-                    <label for="password">Senha</label>
-                    <input type="password" class="form-control shadow-sm" name="password">
-                    <div class="text-center">
-                        <input type="submit" name="entrar" value="Entrar" class="btn btn-block bg-transparent shadow-lg text-light mt-2">
-                        <a href="cadastro.html" type="button" class="btn btn-block bg-transparent shadow-lg text-light mt-2">Cadastrar-se</a>
-                    </div>
-                </form>
-            </div>
-        </div>
+
     </main>
     <footer>
         <a class="navbar fixed-bottom text-decoration-none text-light form-control" href="https://github.com/tomazgabriel"><i>Github - Gabriel Tomaz - 2023</i></a>
